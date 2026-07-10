@@ -1,5 +1,11 @@
 # GitOps Demo Manifests
 
+**Stack skills:** `Kubernetes · Git · GitOps`
+
+> Full portfolio stack: Linux · Docker · Kubernetes · Jenkins · GitLab CI · Ansible · Terraform · Prometheus · Grafana · Zabbix · Nginx · Git · Python · Bash · PowerShell
+>
+> Hub: https://github.com/qwertqaze102-prog/devops-portfolio-hub
+
 GitOps-style repository layout (Argo CD / Flux friendly):
 - apps split by environment
 - image tag updates as commits
