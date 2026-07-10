@@ -6,6 +6,20 @@
 >
 > Hub: https://github.com/qwertqaze102-prog/devops-portfolio-hub
 
+
+## GitOps flow
+
+```mermaid
+flowchart LR
+  Dev[Developer] --> Git[(Git repo)]
+  Git --> Argo[Argo CD]
+  Argo --> Cluster[(Kubernetes)]
+```
+
+```text
+Git is source of truth → controller syncs desired state to cluster
+```
+
 GitOps-style repository layout (Argo CD / Flux friendly):
 - apps split by environment
 - image tag updates as commits
@@ -22,3 +36,9 @@ apps/
 bootstrap/
   argocd-app-of-apps.yaml
 ```
+
+## Screenshots / how it looks
+
+> Diagrams above show architecture. Run the stack locally and attach UI screenshots here if needed:
+> - `docs/screenshots/` folder (optional)
+> - keep secrets out of screenshots
